@@ -18,7 +18,7 @@ export default withMermaid(
       hostname: siteUrl,
     },
     head: [
-      ["meta", { name: "theme-color", content: "#5b5bd6" }],
+      ["meta", { name: "theme-color", content: "#d8f238" }],
       ["meta", { name: "author", content: "WorkBuddy Guide Contributors" }],
       [
         "meta",
@@ -50,16 +50,16 @@ export default withMermaid(
     mermaid: {
       theme: "base",
       themeVariables: {
-        primaryColor: "#eef0ff",
-        primaryTextColor: "#202038",
-        primaryBorderColor: "#6d6ddb",
-        lineColor: "#7777a8",
-        secondaryColor: "#f7f4ff",
-        tertiaryColor: "#f5f7fb",
+        primaryColor: "#eef6d1",
+        primaryTextColor: "#12140f",
+        primaryBorderColor: "#355e18",
+        lineColor: "#62675e",
+        secondaryColor: "#f5f7f0",
+        tertiaryColor: "#ffffff",
       },
     },
     themeConfig: {
-      siteTitle: "WorkBuddy 实战蓝皮书",
+      siteTitle: "WorkBuddy Guide",
       nav: [
         { text: "首页", link: "/" },
         { text: "开始阅读", link: "/bluebook/" },
@@ -93,7 +93,8 @@ export default withMermaid(
         text: "在 GitHub 上改进此页",
       },
       footer: {
-        message: "以真实任务为主线的 WorkBuddy 社区实战读本",
+        message:
+          '以真实任务为主线的 WorkBuddy 社区实战读本 · Pixel icons by <a href="https://pixeliconlibrary.com/" target="_blank" rel="noreferrer">HackerNoon</a>',
         copyright: "Copyright © 2026 WorkBuddy Guide Contributors",
       },
     },
