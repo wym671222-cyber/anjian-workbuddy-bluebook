@@ -1,0 +1,208 @@
+:root {
+  --vp-c-brand-1: #5b5bd6;
+  --vp-c-brand-2: #6d6de3;
+  --vp-c-brand-3: #4848ba;
+  --vp-c-brand-soft: rgba(91, 91, 214, 0.14);
+  --vp-c-bg-alt: #f7f7fb;
+  --vp-c-divider: rgba(85, 82, 115, 0.14);
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #4f46e5 10%, #7c3aed 56%, #2563eb 100%);
+  --vp-home-hero-image-background-image: radial-gradient(circle at center, rgba(91, 91, 214, 0.22), transparent 68%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+.dark {
+  --vp-c-brand-1: #aaa7ff;
+  --vp-c-brand-2: #8f8be8;
+  --vp-c-brand-3: #c8c5ff;
+  --vp-c-brand-soft: rgba(143, 139, 232, 0.18);
+  --vp-c-bg-alt: #171721;
+  --vp-c-divider: rgba(215, 211, 255, 0.12);
+}
+
+body {
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.VPNavBarTitle .title {
+  font-weight: 720;
+  letter-spacing: -0.02em;
+}
+
+.VPHomeHero {
+  position: relative;
+  overflow: hidden;
+}
+
+.VPHomeHero::before {
+  position: absolute;
+  inset: 24px 0 auto;
+  height: 420px;
+  background-image: radial-gradient(rgba(91, 91, 214, 0.16) 1px, transparent 1px);
+  background-size: 22px 22px;
+  mask-image: linear-gradient(to bottom, black, transparent 82%);
+  content: "";
+  pointer-events: none;
+}
+
+.VPHomeHero .container,
+.VPHomeFeatures .container {
+  position: relative;
+}
+
+.VPHomeHero .name {
+  font-weight: 820;
+  letter-spacing: -0.045em;
+}
+
+.VPHomeHero .text {
+  max-width: 740px;
+  font-size: clamp(30px, 5vw, 54px);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.VPHomeHero .tagline {
+  max-width: 680px;
+  line-height: 1.75;
+}
+
+.VPFeature {
+  border: 1px solid var(--vp-c-divider);
+  background: color-mix(in srgb, var(--vp-c-bg-soft) 82%, transparent);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.VPFeature:hover {
+  transform: translateY(-3px);
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 14px 40px rgba(46, 43, 91, 0.1);
+}
+
+.home-section {
+  max-width: 1152px;
+  margin: 18px auto 0;
+  padding: 48px 24px 24px;
+}
+
+.home-section__eyebrow {
+  margin: 0 0 8px;
+  color: var(--vp-c-brand-1);
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.home-section h2 {
+  margin: 0;
+  border: 0;
+  font-size: clamp(26px, 4vw, 38px);
+  letter-spacing: -0.03em;
+}
+
+.home-section__intro {
+  max-width: 760px;
+  margin: 14px 0 28px;
+  color: var(--vp-c-text-2);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.reading-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.reading-card {
+  display: block;
+  min-height: 176px;
+  padding: 24px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 18px;
+  color: inherit !important;
+  background: linear-gradient(145deg, var(--vp-c-bg-soft), color-mix(in srgb, var(--vp-c-brand-soft) 45%, var(--vp-c-bg)));
+  text-decoration: none !important;
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.reading-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--vp-c-brand-1);
+}
+
+.reading-card__number {
+  display: block;
+  margin-bottom: 28px;
+  color: var(--vp-c-brand-1);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.reading-card strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.reading-card span:last-child {
+  color: var(--vp-c-text-2);
+  line-height: 1.7;
+}
+
+.vp-doc img {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  box-shadow: 0 10px 32px rgba(32, 32, 56, 0.08);
+}
+
+.vp-doc video {
+  display: block;
+  width: 100%;
+  margin: 24px 0;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  background: #101018;
+  box-shadow: 0 10px 32px rgba(32, 32, 56, 0.12);
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+}
+
+.vp-doc .mermaid {
+  margin: 24px 0;
+  padding: 20px;
+  overflow-x: auto;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  background: var(--vp-c-bg-soft);
+}
+
+.embed-note {
+  margin: 20px 0;
+  padding: 18px 20px;
+  border: 1px solid var(--vp-c-brand-soft);
+  border-left: 4px solid var(--vp-c-brand-1);
+  border-radius: 12px;
+  background: var(--vp-c-brand-soft);
+}
+
+@media (max-width: 700px) {
+  .reading-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-section {
+    padding-inline: 20px;
+  }
+
+  .VPHomeHero .text {
+    font-size: 34px;
+  }
+}
