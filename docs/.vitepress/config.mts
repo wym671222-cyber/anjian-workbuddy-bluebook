@@ -28,6 +28,13 @@ export default defineConfig({
       [
         "meta",
         {
+          name: "baidu-site-verification",
+          content: "codeva-RF1ZqL4g90",
+        },
+      ],
+      [
+        "meta",
+        {
           name: "keywords",
           content:
             "WorkBuddy,WorkBuddy 教程,AI Agent,AI 工作系统,Skills,MCP,自动化,多智能体,职场 AI",
