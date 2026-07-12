@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://workbuddy.homes/">
-    <img src="./assets/workbuddy-guide-banner.png" alt="WorkBuddy 实战蓝皮书：从第一项任务，到一支 AI 团队" width="100%">
+    <img src="./assets/workbuddy-guide-banner.png" alt="WorkBuddy蓝皮书：首页预览" width="100%">
   </a>
 </p>
 

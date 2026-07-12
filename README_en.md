@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://workbuddy.homes/">
-    <img src="./assets/workbuddy-guide-banner.png" alt="The WorkBuddy Bluebook: From your first task to an AI team" width="100%">
+    <img src="./assets/workbuddy-guide-banner.png" alt="WorkBuddy Bluebook homepage preview" width="100%">
   </a>
 </p>
 
