@@ -214,6 +214,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 0;
   padding: 70px 28px 64px 80px;
 }
 
@@ -227,6 +228,12 @@ button {
   letter-spacing: -0.07em;
 }
 
+.wb-hero__copy .wb-hero__title--bluebook {
+  font-size: clamp(52px, 4.7vw, 70px);
+  letter-spacing: -0.06em;
+  white-space: nowrap;
+}
+
 .wb-hero__summary {
   max-width: 680px;
   margin: 0;
@@ -234,6 +241,7 @@ button {
   font-size: 19px;
   font-weight: 540;
   line-height: 1.85;
+  overflow-wrap: anywhere;
 }
 
 .wb-hero__actions {
@@ -1043,6 +1051,10 @@ html:not(.dark) .vp-doc .vp-code span {
     font-size: clamp(54px, 9vw, 72px);
   }
 
+  .wb-hero__copy .wb-hero__title--bluebook {
+    font-size: clamp(48px, 8vw, 64px);
+  }
+
   .wb-hero__art {
     min-height: 430px;
   }
@@ -1102,6 +1114,10 @@ html:not(.dark) .vp-doc .vp-code span {
     margin-top: 18px;
     font-size: clamp(36px, 10.8vw, 48px);
     line-height: 1.06;
+  }
+
+  .wb-hero__copy .wb-hero__title--bluebook {
+    font-size: clamp(31px, 8.5vw, 36px);
   }
 
   .wb-hero__summary {

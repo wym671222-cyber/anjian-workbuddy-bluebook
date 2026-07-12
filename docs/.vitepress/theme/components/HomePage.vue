@@ -10,10 +10,9 @@ import PixelIconSprite from "./PixelIconSprite.vue";
       <div class="wb-hero__stage">
         <div class="wb-hero__copy">
           <p class="wb-pixel-label">OPEN-SOURCE · 27 CHAPTERS · 2026</p>
-          <h1 id="wb-hero-title">从第一项任务，<br />到一支 AI 团队</h1>
+          <h1 id="wb-hero-title" class="wb-hero__title--bluebook">WorkBuddy蓝皮书</h1>
           <p class="wb-hero__summary">
-            一套以真实工作为主线的 WorkBuddy 实践路径。<br />
-            先用起来，再把一次成功沉淀为可复用的工作系统。
+            WorkBuddy能干嘛？一套以真实工作为主线的WorkBuddy实践路径。带你从0到1先用起来，再从1到100把每次成功沉淀为可复用的工作系统，真正把AI变成生产力！
           </p>
           <div class="wb-hero__actions">
             <a class="wb-button wb-button--primary" href="/bluebook/">
