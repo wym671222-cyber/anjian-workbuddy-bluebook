@@ -120,11 +120,13 @@ button {
 }
 
 .VPNavBarTitle .title::before {
-  color: var(--wb-ink);
-  font-family: iconfont !important;
-  font-size: 27px;
-  font-weight: 400;
-  content: "\f175";
+  width: 27px;
+  height: 27px;
+  flex: 0 0 auto;
+  background: var(--wb-ink);
+  content: "";
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath transform='translate(0 24) scale(1 -1)' d='M20 7H21V8H22V22H21V23H4V22H3V21H2V3H3V2H4V1H21V2H22V3H21V4H20zM18 3H5V4H4V6H5V7H18zM4 21H20V9H4z'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath transform='translate(0 24) scale(1 -1)' d='M20 7H21V8H22V22H21V23H4V22H3V21H2V3H3V2H4V1H21V2H22V3H21V4H20zM18 3H5V4H4V6H5V7H18zM4 21H20V9H4z'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 
 .VPNavBarMenuLink,
