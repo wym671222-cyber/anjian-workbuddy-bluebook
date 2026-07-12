@@ -110,19 +110,6 @@ WorkBuddyGuide
 
 本项目是社区维护的 WorkBuddy 实战知识库。涉及产品功能、界面、价格、可用范围和安全策略等时效性信息时，请以 WorkBuddy 官方渠道为准。
 
-## Star 趋势图
-
-[![Star History Chart](https://api.star-history.com/svg?repos=AlephAITech/WorkBuddyGuide&type=Date)](https://www.star-history.com/?type=date&repos=AlephAITech%2FWorkBuddyGuide)
-
-## Star History
-
-<a href="https://www.star-history.com/?repos=AlephAITech%2FWorkBuddyGuide&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=AlephAITech/WorkBuddyGuide&type=date&theme=dark&legend=top-left&sealed_token=mLRLuMqWhw3JQDEB0ALMpemXUHkRIKXl5b_Aw3GlAjDZ2i3rf_m2msNH8zdtJ5c37eHpM87RUIRM_NOqOJYVn_5Kof-aSYvzDvxPu6AUHN97-xcZ9f83ew" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=AlephAITech/WorkBuddyGuide&type=date&legend=top-left&sealed_token=mLRLuMqWhw3JQDEB0ALMpemXUHkRIKXl5b_Aw3GlAjDZ2i3rf_m2msNH8zdtJ5c37eHpM87RUIRM_NOqOJYVn_5Kof-aSYvzDvxPu6AUHN97-xcZ9f83ew" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=AlephAITech/WorkBuddyGuide&type=date&legend=top-left&sealed_token=mLRLuMqWhw3JQDEB0ALMpemXUHkRIKXl5b_Aw3GlAjDZ2i3rf_m2msNH8zdtJ5c37eHpM87RUIRM_NOqOJYVn_5Kof-aSYvzDvxPu6AUHN97-xcZ9f83ew" />
- </picture>
-</a>
 
 ## 开源协议
 
