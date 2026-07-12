@@ -28,7 +28,7 @@ export const bluebookSidebar: DefaultTheme.Sidebar = {
     { text: "蓝皮书总览", link: "/bluebook/" },
     {
       text: "第一篇 · 使用手册",
-      collapsed: false,
+      collapsed: true,
       items: [
         item(part1, "本篇导读"),
         child(part1, "第 1 章 初识 WorkBuddy"),
@@ -46,7 +46,7 @@ export const bluebookSidebar: DefaultTheme.Sidebar = {
     },
     {
       text: "第二篇 · 实战案例",
-      collapsed: false,
+      collapsed: true,
       items: [
         item(part2, "本篇导读"),
         child(part2, "第 11 章 办公三件套：Word、Excel、PPT"),
@@ -64,7 +64,7 @@ export const bluebookSidebar: DefaultTheme.Sidebar = {
     },
     {
       text: "第三篇 · 进阶系统",
-      collapsed: false,
+      collapsed: true,
       items: [
         item(part3, "本篇导读"),
         child(part3, "第 22 章 打造skill：将书和视频蒸馏为可执行 Skill"),
@@ -75,7 +75,7 @@ export const bluebookSidebar: DefaultTheme.Sidebar = {
     },
     {
       text: "第四篇 · 岗位与行业",
-      collapsed: false,
+      collapsed: true,
       items: [
         item(part4, "本篇导读"),
         child(part4, "第 26 章 岗位路线图：不同岗位如何把 WorkBuddy 用深"),
@@ -84,7 +84,7 @@ export const bluebookSidebar: DefaultTheme.Sidebar = {
     },
     {
       text: "附录",
-      collapsed: false,
+      collapsed: true,
       items: [
         item(appendix, "附录导读"),
         child(appendix, "附录 A 常用指令模板"),
