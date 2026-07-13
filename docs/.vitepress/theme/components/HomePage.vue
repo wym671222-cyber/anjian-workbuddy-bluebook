@@ -128,9 +128,6 @@ import PixelIconSprite from "./PixelIconSprite.vue";
         <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2018%20章%20公文编制/')">
           <PixelIcon name="book" /><strong>公文编制</strong><span>模板 · 审核 · 正式交付</span>
         </a>
-        <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2012%20章%20从整理桌面文件这些小事做起/')">
-          <PixelIcon name="chart-line" /><strong>数据分析</strong><span>清洗 · 核对 · 可视化</span>
-        </a>
         <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2019%20章%20会议与待办/')">
           <PixelIcon name="users" /><strong>会议与待办</strong><span>纪要 · 任务 · 跟踪</span>
         </a>
@@ -139,9 +136,6 @@ import PixelIconSprite from "./PixelIconSprite.vue";
         </a>
         <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2021%20章%20项目研判分析/')">
           <PixelIcon name="sitemap" /><strong>项目研判分析</strong><span>资料 · 尽调 · 风险</span>
-        </a>
-        <a :href="withBase('/bluebook/第三篇%20进阶篇：把案例变成自己的工作系统/第%2024%20章%20如何进行多%20Agent%20系统设计/')">
-          <PixelIcon name="video-camera" /><strong>宣传与共创</strong><span>内容 · 案例 · 复盘</span>
         </a>
       </div>
     </section>
