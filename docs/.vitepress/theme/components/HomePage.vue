@@ -162,7 +162,7 @@ import PixelIconSprite from "./PixelIconSprite.vue";
 
     <section class="wb-community" aria-labelledby="wb-community-title">
       <div>
-        <p class="wb-pixel-label">INTERNAL BLUEBOOK · CO-CREATION · 2026</p>
+        <p class="wb-pixel-label">WORKBUDDY BLUEBOOK · CO-CREATION · 2026</p>
         <h2 id="wb-community-title">这本蓝皮书，由安居建业的真实工作共同写成。</h2>
         <p class="wb-community__summary">每个案例都经过筛选、复现与边界检查，再沉淀为可复用的方法。</p>
       </div>
