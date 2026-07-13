@@ -6,7 +6,6 @@ import type { HeadConfig, PageData, TransformContext } from "vitepress";
 const SITE_NAME = "安居建业 WorkBuddy 蓝皮书";
 const SITE_ALTERNATE_NAME = "安居建业 WorkBuddy 内部实践读本";
 const ORGANIZATION_NAME = "安居建业 WorkBuddy 蓝皮书共创组";
-const GITHUB_URL = "https://github.com/AlephAITech/WorkBuddyGuide";
 const DEFAULT_DESCRIPTION =
   "从第一项真实工作，到可复用的 AI 工作系统：安居建业内部 WorkBuddy 实践读本。";
 
@@ -235,7 +234,6 @@ export function createSeoHead(
     "@id": `${siteUrl}/#organization`,
     name: ORGANIZATION_NAME,
     url: `${siteUrl}/`,
-    sameAs: [GITHUB_URL],
   };
   const website = {
     "@type": "WebSite",
