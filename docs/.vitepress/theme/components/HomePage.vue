@@ -125,20 +125,20 @@ import PixelIconSprite from "./PixelIconSprite.vue";
       </div>
 
       <div class="wb-task-grid">
-        <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2011%20章%20办公三件套：Word、Excel、PPT/')">
-          <PixelIcon name="book" /><strong>公文与汇报</strong><span>Word · PPT · 正式交付</span>
+        <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2018%20章%20公文编制/')">
+          <PixelIcon name="book" /><strong>公文编制</strong><span>模板 · 审核 · 正式交付</span>
         </a>
         <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2012%20章%20从整理桌面文件这些小事做起/')">
           <PixelIcon name="chart-line" /><strong>数据分析</strong><span>清洗 · 核对 · 可视化</span>
         </a>
-        <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2015%20章%20资讯整合：把信息流变成每日通知/')">
-          <PixelIcon name="users" /><strong>会议与督办</strong><span>纪要 · 任务 · 跟踪</span>
+        <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2019%20章%20会议与待办/')">
+          <PixelIcon name="users" /><strong>会议与待办</strong><span>纪要 · 任务 · 跟踪</span>
         </a>
-        <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2018%20章%20把投资分析变成你的日常/')">
-          <PixelIcon name="folder-open" /><strong>制度与知识</strong><span>比对 · 检索 · 复用</span>
+        <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2020%20章%20制度与知识管理/')">
+          <PixelIcon name="folder-open" /><strong>制度与知识管理</strong><span>比对 · 检索 · 复用</span>
         </a>
-        <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2019%20章%20一句话召唤%20AI%20视频团队/')">
-          <PixelIcon name="sitemap" /><strong>项目研判</strong><span>资料 · 尽调 · 风险</span>
+        <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2021%20章%20项目研判分析/')">
+          <PixelIcon name="sitemap" /><strong>项目研判分析</strong><span>资料 · 尽调 · 风险</span>
         </a>
         <a :href="withBase('/bluebook/第三篇%20进阶篇：把案例变成自己的工作系统/第%2024%20章%20如何进行多%20Agent%20系统设计/')">
           <PixelIcon name="video-camera" /><strong>宣传与共创</strong><span>内容 · 案例 · 复盘</span>
