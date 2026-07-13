@@ -1,4 +1,4 @@
-# WorkBuddy Guide Design QA
+# 安居建业 WorkBuddy 蓝皮书设计验收
 
 ## Visual sources
 
@@ -33,7 +33,7 @@
 - Typography: passed. Pixel display type is reserved for labels, metadata, and accents; Chinese reading text remains legible.
 - Layout and spacing: passed. Hero, value strip, route cards, task grid, side navigation, article body, and page navigation align consistently.
 - Color and contrast: passed. Acid green, ink black, and warm paper form a consistent high-contrast system in both page types.
-- Icons and imagery: passed. HackerNoon Pixel Icon Library is used for interface illustrations; existing chapter images remain real content assets.
+- Icons and imagery: passed. Interface illustrations and existing chapter images remain readable and consistently styled.
 - Responsiveness: passed. At 390 px, both pages have no horizontal overflow, actions stack correctly, and chapter content remains readable.
 - Interactions: passed. Search, theme switching, primary CTAs, cards, and chapter navigation are available and preserve VitePress behavior.
 - Accessibility: passed. Semantic headings and landmarks are retained, icon buttons have accessible labels, visible focus styles are provided, tap targets are sized for mobile, and reduced-motion preferences are respected.

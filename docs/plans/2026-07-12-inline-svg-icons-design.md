@@ -9,7 +9,7 @@
 
 ## 决策
 
-保留 HackerNoon Pixel Icon Library 的原始 24×24 路径和现有视觉样式，改为
+保留现有 24×24 图标路径和视觉样式，改为
 服务端渲染的内联 SVG Sprite：
 
 - `PixelIconSprite.vue` 在首页 HTML 中声明 16 个 `<symbol>`。

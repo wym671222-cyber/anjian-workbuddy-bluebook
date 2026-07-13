@@ -12,7 +12,7 @@
   <a href="./LICENSE">MIT License</a>
 </p>
 
-> 本项目基于 [AlephAITech/WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) 改编。第一篇保留基础教程，第二至第四篇将以安居建业真实、脱敏、可复现的工作材料逐章筛选和共创。
+> 第一篇保留基础教程，第二至第四篇将以安居建业真实、脱敏、可复现的工作材料逐章筛选和共创。
 
 ## 本地阅读
 
@@ -67,7 +67,7 @@ npm run docs:preview
 ## 目录结构
 
 ```text
-WorkBuddyGuide
+anjian-workbuddy-bluebook
 ├─ docs/
 │  ├─ .vitepress/       # 网站配置与主题
 │  ├─ bluebook/         # 蓝皮书正文、图片、视频
@@ -76,30 +76,8 @@ WorkBuddyGuide
 ├─ scripts/             # 内容同步工具
 ├─ CONTRIBUTING.md
 ├─ README.md
-└─ README_en.md
+└─ LICENSE
 ```
-
-## 部署
-
-本站使用 **VitePress + Cloudflare Pages + GitHub**。Cloudflare Pages 连接本仓库的 `main` 分支后，每次推送都会自动构建部署。配置见 [DEPLOYMENT.md](./DEPLOYMENT.md)。
-
-## 原项目作者与贡献者
-
-感谢以下作者参与原版《WorkBuddy 蓝皮书》的创作与维护。企业改编版继续保留原作者署名和 MIT License。
-
-<p align="center">
-  <a href="./assets/authors/jia-mu-wei-lai-pai.png"><img src="./assets/authors/jia-mu-wei-lai-pai.png" alt="甲木未来派" width="48%"></a>
-  <a href="./assets/authors/mo-yu-xiao-li.png"><img src="./assets/authors/mo-yu-xiao-li.png" alt="摸鱼小李" width="48%"></a>
-</p>
-
-<p align="center">
-  <a href="./assets/authors/dai-shu-di-ai-ke-zhan.png"><img src="./assets/authors/dai-shu-di-ai-ke-zhan.png" alt="袋鼠帝AI客栈" width="48%"></a>
-  <a href="./assets/authors/cang-he.png"><img src="./assets/authors/cang-he.png" alt="苍何" width="48%"></a>
-</p>
-
-<p align="center">
-  <a href="./assets/authors/liu-cong-nlp.png"><img src="./assets/authors/liu-cong-nlp.png" alt="刘聪NLP" width="48%"></a>
-</p>
 
 ## 声明
 

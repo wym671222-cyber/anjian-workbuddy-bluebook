@@ -72,8 +72,8 @@ export default defineConfig({
       },
       footer: {
         message:
-          '内部试用 · 基于 <a href="https://github.com/AlephAITech/WorkBuddyGuide" target="_blank" rel="noreferrer">WorkBuddyGuide</a> 开源项目改编 · MIT License · Pixel icons by <a href="https://pixeliconlibrary.com/" target="_blank" rel="noreferrer">HackerNoon</a>',
-        copyright: "Copyright © 2026 WorkBuddy Guide Contributors · 安居建业内部共创",
+          "仅供安居建业内部试用 · 案例需经脱敏、权限和人工确认后使用",
+        copyright: "Copyright © 2026 安居建业内部共创",
       },
     },
   });

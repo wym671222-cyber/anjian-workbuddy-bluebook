@@ -52,7 +52,3 @@ flowchart LR
 ::: warning 内部资料边界
 请勿在共创材料中包含个人信息、账号密钥、未公开经营数据或无权传播的项目资料。高风险动作必须写明权限、人工确认、日志和回退方式。
 :::
-
-## 开源来源
-
-本项目基于 [AlephAITech/WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) 改编，继续保留原项目版权声明与 MIT License。
