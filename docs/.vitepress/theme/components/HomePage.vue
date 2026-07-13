@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { withBase } from "vitepress";
+
 import PixelIcon from "./PixelIcon.vue";
 import PixelIconSprite from "./PixelIconSprite.vue";
 </script>
@@ -16,11 +18,11 @@ import PixelIconSprite from "./PixelIconSprite.vue";
             从第一项真实工作，到可复用的 AI 工作系统。
           </p>
           <div class="wb-hero__actions">
-            <a class="wb-button wb-button--primary" href="/bluebook/">
+            <a class="wb-button wb-button--primary" :href="withBase('/bluebook/')">
               <span>开始阅读</span>
               <PixelIcon name="arrow-right" />
             </a>
-            <a class="wb-button wb-button--outline" href="/reading-guide">查看阅读路线</a>
+            <a class="wb-button wb-button--outline" :href="withBase('/reading-guide')">查看阅读路线</a>
           </div>
         </div>
 
@@ -71,7 +73,7 @@ import PixelIconSprite from "./PixelIconSprite.vue";
       </div>
 
       <div class="wb-reading-grid">
-        <a class="wb-reading-card" href="/bluebook/第一篇%20使用手册：先把%20WorkBuddy%20用起来/">
+        <a class="wb-reading-card" :href="withBase('/bluebook/第一篇%20使用手册：先把%20WorkBuddy%20用起来/')">
           <span class="wb-reading-card__icon"><PixelIcon name="user" /></span>
           <span class="wb-reading-card__content">
             <small>01</small>
@@ -81,7 +83,7 @@ import PixelIconSprite from "./PixelIconSprite.vue";
           <PixelIcon name="arrow-right" class="wb-reading-card__arrow" />
         </a>
 
-        <a class="wb-reading-card" href="/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/">
+        <a class="wb-reading-card" :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/')">
           <span class="wb-reading-card__icon"><PixelIcon name="briefcase" /></span>
           <span class="wb-reading-card__content">
             <small>02</small>
@@ -91,7 +93,7 @@ import PixelIconSprite from "./PixelIconSprite.vue";
           <PixelIcon name="arrow-right" class="wb-reading-card__arrow" />
         </a>
 
-        <a class="wb-reading-card" href="/bluebook/第三篇%20进阶篇：把案例变成自己的工作系统/">
+        <a class="wb-reading-card" :href="withBase('/bluebook/第三篇%20进阶篇：把案例变成自己的工作系统/')">
           <span class="wb-reading-card__icon"><PixelIcon name="sitemap" /></span>
           <span class="wb-reading-card__content">
             <small>03</small>
@@ -101,7 +103,7 @@ import PixelIconSprite from "./PixelIconSprite.vue";
           <PixelIcon name="arrow-right" class="wb-reading-card__arrow" />
         </a>
 
-        <a class="wb-reading-card" href="/bluebook/第四篇%20岗位与行业落地/">
+        <a class="wb-reading-card" :href="withBase('/bluebook/第四篇%20岗位与行业落地/')">
           <span class="wb-reading-card__icon"><PixelIcon name="users" /></span>
           <span class="wb-reading-card__content">
             <small>04</small>
@@ -123,22 +125,22 @@ import PixelIconSprite from "./PixelIconSprite.vue";
       </div>
 
       <div class="wb-task-grid">
-        <a href="/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2011%20章%20办公三件套：Word、Excel、PPT/">
+        <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2011%20章%20办公三件套：Word、Excel、PPT/')">
           <PixelIcon name="book" /><strong>公文与汇报</strong><span>Word · PPT · 正式交付</span>
         </a>
-        <a href="/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2012%20章%20从整理桌面文件这些小事做起/">
+        <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2012%20章%20从整理桌面文件这些小事做起/')">
           <PixelIcon name="chart-line" /><strong>数据分析</strong><span>清洗 · 核对 · 可视化</span>
         </a>
-        <a href="/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2015%20章%20资讯整合：把信息流变成每日通知/">
+        <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2015%20章%20资讯整合：把信息流变成每日通知/')">
           <PixelIcon name="users" /><strong>会议与督办</strong><span>纪要 · 任务 · 跟踪</span>
         </a>
-        <a href="/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2018%20章%20把投资分析变成你的日常/">
+        <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2018%20章%20把投资分析变成你的日常/')">
           <PixelIcon name="folder-open" /><strong>制度与知识</strong><span>比对 · 检索 · 复用</span>
         </a>
-        <a href="/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2019%20章%20一句话召唤%20AI%20视频团队/">
+        <a :href="withBase('/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/第%2019%20章%20一句话召唤%20AI%20视频团队/')">
           <PixelIcon name="sitemap" /><strong>项目研判</strong><span>资料 · 尽调 · 风险</span>
         </a>
-        <a href="/bluebook/第三篇%20进阶篇：把案例变成自己的工作系统/第%2024%20章%20如何进行多%20Agent%20系统设计/">
+        <a :href="withBase('/bluebook/第三篇%20进阶篇：把案例变成自己的工作系统/第%2024%20章%20如何进行多%20Agent%20系统设计/')">
           <PixelIcon name="video-camera" /><strong>宣传与共创</strong><span>内容 · 案例 · 复盘</span>
         </a>
       </div>
@@ -165,8 +167,8 @@ import PixelIconSprite from "./PixelIconSprite.vue";
         <p class="wb-community__summary">每个案例都经过筛选、复现与边界检查，再沉淀为可复用的方法。</p>
       </div>
       <div class="wb-community__actions">
-        <a class="wb-button wb-button--acid" href="/community/contributing#提交案例">提交案例</a>
-        <a class="wb-button wb-button--dark-outline" href="/community/contributing">查看共创规范</a>
+        <a class="wb-button wb-button--acid" :href="withBase('/community/contributing#提交案例')">提交案例</a>
+        <a class="wb-button wb-button--dark-outline" :href="withBase('/community/contributing')">查看共创规范</a>
       </div>
       <PixelIcon name="book" class="wb-community__icon" />
     </section>

@@ -4,10 +4,10 @@ import { resolve } from "node:path";
 import type { HeadConfig, PageData, TransformContext } from "vitepress";
 
 const SITE_NAME = "安居建业 WorkBuddy 蓝皮书";
-const SITE_ALTERNATE_NAME = "安居建业 WorkBuddy 内部实践读本";
+const SITE_ALTERNATE_NAME = "安居建业 WorkBuddy 实践读本";
 const ORGANIZATION_NAME = "安居建业 WorkBuddy 蓝皮书共创组";
 const DEFAULT_DESCRIPTION =
-  "从第一项真实工作，到可复用的 AI 工作系统：安居建业内部 WorkBuddy 实践读本。";
+  "从第一项真实工作，到可复用的 AI 工作系统：安居建业 WorkBuddy 实践读本。";
 
 function cleanPagePath(page: string): string {
   if (page === "index.md") return "/";

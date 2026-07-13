@@ -4,13 +4,16 @@ import { bluebookSidebar } from "./sidebar";
 import { configureMermaidMarkdown } from "./mermaid-markdown";
 import { createPageDescription, createSeoHead } from "./seo";
 
-const siteUrl = process.env.VITEPRESS_SITE_URL || "https://workbuddy-bluebook.internal";
+const siteUrl =
+  process.env.VITEPRESS_SITE_URL ||
+  "https://wym671222-cyber.github.io/anjian-workbuddy-bluebook-site";
 
 export default defineConfig({
     lang: "zh-CN",
     title: "安居建业 WorkBuddy 蓝皮书",
     titleTemplate: ":title · 安居建业 WorkBuddy 蓝皮书",
-    description: "从第一项真实工作，到可复用的 AI 工作系统：安居建业内部 WorkBuddy 实践读本。",
+    description: "从第一项真实工作，到可复用的 AI 工作系统：安居建业 WorkBuddy 实践读本。",
+    base: process.env.VITEPRESS_BASE || "/",
     cleanUrls: true,
     lastUpdated: true,
     srcExclude: ["**/source.md", "plans/**"],
@@ -21,7 +24,6 @@ export default defineConfig({
     head: [
       ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
       ["meta", { name: "theme-color", content: "#e21b22" }],
-      ["meta", { name: "robots", content: "noindex, nofollow" }],
       ["meta", { name: "author", content: "安居建业 WorkBuddy 蓝皮书共创组" }],
       [
         "meta",
@@ -72,8 +74,8 @@ export default defineConfig({
       },
       footer: {
         message:
-          "仅供安居建业内部试用 · 案例需经脱敏、权限和人工确认后使用",
-        copyright: "Copyright © 2026 安居建业内部共创",
+          "公开阅读版 · 案例需经脱敏、权限和人工确认后使用",
+        copyright: "Copyright © 2026 安居建业 WorkBuddy 共创组",
       },
     },
   });
