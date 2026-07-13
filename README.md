@@ -1,36 +1,31 @@
 <p align="center">
-  <a href="https://workbuddy.homes/">
-    <img src="./assets/workbuddy-guide-banner.png" alt="WorkBuddy蓝皮书：首页预览" width="100%">
-  </a>
+  <img src="./docs/plans/design-concepts/home-hero.png" alt="安居建业 WorkBuddy 蓝皮书：首页视觉基准" width="100%">
 </p>
 
-<h1 align="center">WorkBuddy 实战蓝皮书</h1>
+<h1 align="center">安居建业 WorkBuddy 蓝皮书</h1>
 
-<p align="center"><strong>从第一项任务，到一支 AI 团队</strong></p>
+<p align="center"><strong>从第一项真实工作，到可复用的 AI 工作系统</strong></p>
 
 <p align="center">
-  简体中文 · <a href="./README_en.md">English</a> ·
-  <a href="https://workbuddy.homes/">在线阅读</a> ·
-  <a href="./docs/reading-guide.md">阅读指南</a> ·
-  <a href="./CONTRIBUTING.md">参与共创</a>
+  公司内部试用 · <a href="./docs/reading-guide.md">阅读指南</a> ·
+  <a href="./docs/community/contributing.md">共创案例规范</a> ·
+  <a href="./LICENSE">MIT License</a>
 </p>
 
-> 这不是官方功能说明书的改写，而是一本以真实任务为主线的实战读本。先完成安装和第一项工作，再进入移动办公、知识管理、专业诊断、内容自动化和多 Agent 团队，最后把一次成功变成团队可复用的工作系统。
+> 本项目基于 [AlephAITech/WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) 改编。第一篇保留基础教程，第二至第四篇将以安居建业真实、脱敏、可复现的工作材料逐章筛选和共创。
 
-## 在线阅读
+## 本地阅读
 
-推荐访问 **[workbuddy.homes](https://workbuddy.homes/)** 阅读。网站提供完整侧边栏、全文搜索、章节目录、深色模式、流程图和移动端适配。
-
-GitHub 适合了解项目和参与贡献；真正阅读蓝皮书时，网站体验更完整。
+当前版本不部署到公网。网站保留完整侧边栏、全文搜索、章节目录、深色模式、流程图和移动端适配，仅供本地或经批准的内部环境使用。
 
 ## 你会在这里看到什么
 
 | 部分 | 内容 |
 | --- | --- |
 | 第一篇 · 使用手册 | 下载、安装、界面、第一个任务、Skill、连接器、API 和自动化 |
-| 第二篇 · 案例篇 | 办公、文件、远程、资讯、知识、会议、投资、视频、自媒体和 GEO |
-| 第三篇 · 进阶篇 | 打造 Skill、多 Agent 系统设计、自动化可靠性 |
-| 第四篇 · 岗位与行业 | 不同岗位的使用路线和行业工作流 |
+| 第二篇 · 安居建业实战 | 逐章筛选并改写为公司真实工作案例 |
+| 第三篇 · 进阶系统 | 用公司案例打造 Skill、多 Agent 与可靠自动化 |
+| 第四篇 · 岗位落地 | 结合公司材料形成岗位路线和核心业务工作流 |
 | 附录 | 常用指令模板与场景速查表 |
 
 ## 推荐阅读方式
@@ -57,9 +52,9 @@ npm run docs:build
 npm run docs:preview
 ```
 
-## 参与共创
+## 内部共创
 
-欢迎贡献：
+案例提交前必须脱敏并确认材料权限。共创内容包括：
 
 - 错别字、失效链接和过时信息修正。
 - 可复现的真实工作案例。
@@ -67,7 +62,7 @@ npm run docs:preview
 - 岗位路线图与行业工作流。
 - 网站导航、搜索、样式和无障碍体验改进。
 
-请先阅读[贡献指南](./CONTRIBUTING.md)。如果暂时不想改代码，也可以直接提交 [Issue](https://github.com/AlephAITech/WorkBuddyGuide/issues)。
+请先阅读[安居建业 WorkBuddy 共创案例规范](./docs/community/contributing.md)。第二至第四篇在用户确认章节方向前，不批量删除、改名或改写。
 
 ## 目录结构
 
@@ -88,9 +83,9 @@ WorkBuddyGuide
 
 本站使用 **VitePress + Cloudflare Pages + GitHub**。Cloudflare Pages 连接本仓库的 `main` 分支后，每次推送都会自动构建部署。配置见 [DEPLOYMENT.md](./DEPLOYMENT.md)。
 
-## 作者们
+## 原项目作者与贡献者
 
-感谢以下作者共同参与《WorkBuddy 蓝皮书》的创作与维护。点击名片可查看原图并扫描二维码。
+感谢以下作者参与原版《WorkBuddy 蓝皮书》的创作与维护。企业改编版继续保留原作者署名和 MIT License。
 
 <p align="center">
   <a href="./assets/authors/jia-mu-wei-lai-pai.png"><img src="./assets/authors/jia-mu-wei-lai-pai.png" alt="甲木未来派" width="48%"></a>
@@ -108,7 +103,7 @@ WorkBuddyGuide
 
 ## 声明
 
-本项目是社区维护的 WorkBuddy 实战知识库。涉及产品功能、界面、价格、可用范围和安全策略等时效性信息时，请以 WorkBuddy 官方渠道为准。
+本项目是安居建业内部试用读本，不构成 WorkBuddy 官方说明。涉及产品功能、界面、价格、可用范围和安全策略等时效性信息时，请以 WorkBuddy 官方渠道为准；涉及公司流程和权限时，以公司正式制度为准。
 
 
 ## 开源协议

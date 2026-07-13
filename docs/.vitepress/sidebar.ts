@@ -45,7 +45,7 @@ export const bluebookSidebar: DefaultTheme.Sidebar = {
       ],
     },
     {
-      text: "第二篇 · 实战案例",
+      text: "第二篇 · 安居建业实战",
       collapsed: false,
       items: [
         item(part2, "本篇导读"),
@@ -74,7 +74,7 @@ export const bluebookSidebar: DefaultTheme.Sidebar = {
       ],
     },
     {
-      text: "第四篇 · 岗位与行业",
+      text: "第四篇 · 岗位落地",
       collapsed: false,
       items: [
         item(part4, "本篇导读"),

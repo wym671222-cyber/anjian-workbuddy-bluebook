@@ -1,15 +1,15 @@
 ---
-title: WorkBuddy 使用手册与实战指南｜27 章完整目录
+title: 安居建业 WorkBuddy 蓝皮书｜27 章共创目录
 titleTemplate: false
-description: WorkBuddy 中文使用手册与实战指南，共 27 章，涵盖安装入门、真实案例、Skills、连接器、自动化、多智能体与团队落地。
-breadcrumbTitle: WorkBuddy 实战蓝皮书
+description: 安居建业内部 WorkBuddy 实践读本，第一篇保留基础教程，第二至第四篇通过真实材料逐章筛选和共创。
+breadcrumbTitle: 安居建业 WorkBuddy 蓝皮书
 ---
 
-# WorkBuddy 使用手册与实战指南
+# 安居建业 WorkBuddy 蓝皮书
 
-**27 章完整目录：从安装入门到 AI 工作系统**
+**内部试用版：从基础使用到岗位应用**
 
-这是一本以真实任务为主线的 WorkBuddy 中文使用手册。你可以从下载安装和第一个任务开始，再进入 Skills、连接器、移动办公、知识管理、专业诊断、内容自动化和多 Agent 团队，最终把一次成功沉淀为团队可复用的 AI 工作系统。
+第一篇保留 WorkBuddy 基础教程，并补充安居建业内部使用提示。第二至第四篇将以公司真实材料为依据，逐章完成筛选、脱敏、复现与验收，再把一次成功沉淀为可复用的工作系统。
 
 ## 章节目录
 

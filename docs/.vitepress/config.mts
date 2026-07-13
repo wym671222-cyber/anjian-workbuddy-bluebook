@@ -4,40 +4,31 @@ import { bluebookSidebar } from "./sidebar";
 import { configureMermaidMarkdown } from "./mermaid-markdown";
 import { createPageDescription, createSeoHead } from "./seo";
 
-const siteUrl = process.env.VITEPRESS_SITE_URL || "https://workbuddy.homes";
+const siteUrl = process.env.VITEPRESS_SITE_URL || "https://workbuddy-bluebook.internal";
 
 export default defineConfig({
     lang: "zh-CN",
-    title: "WorkBuddy 实战蓝皮书",
-    titleTemplate: ":title · WorkBuddy 实战蓝皮书",
-    description: "从安装使用到 AI 工作系统：27 章 WorkBuddy 实战指南与团队落地方法。",
+    title: "安居建业 WorkBuddy 蓝皮书",
+    titleTemplate: ":title · 安居建业 WorkBuddy 蓝皮书",
+    description: "从第一项真实工作，到可复用的 AI 工作系统：安居建业内部 WorkBuddy 实践读本。",
     cleanUrls: true,
     lastUpdated: true,
     srcExclude: ["**/source.md", "plans/**"],
-    sitemap: {
-      hostname: siteUrl,
-    },
     transformPageData: (pageData, { siteConfig }) => ({
       description: createPageDescription(siteConfig.srcDir, pageData),
     }),
     transformHead: (context) => createSeoHead(siteUrl, context),
     head: [
       ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
-      ["meta", { name: "theme-color", content: "#d8f238" }],
-      ["meta", { name: "author", content: "WorkBuddy Guide Contributors" }],
-      [
-        "meta",
-        {
-          name: "baidu-site-verification",
-          content: "codeva-RF1ZqL4g90",
-        },
-      ],
+      ["meta", { name: "theme-color", content: "#e21b22" }],
+      ["meta", { name: "robots", content: "noindex, nofollow" }],
+      ["meta", { name: "author", content: "安居建业 WorkBuddy 蓝皮书共创组" }],
       [
         "meta",
         {
           name: "keywords",
           content:
-            "WorkBuddy,WorkBuddy 教程,AI Agent,AI 工作系统,Skills,MCP,自动化,多智能体,职场 AI",
+            "安居建业,WorkBuddy,AI 工作系统,Skills,MCP,自动化,多智能体,内部培训",
         },
       ],
     ],
@@ -52,21 +43,15 @@ export default defineConfig({
       },
     },
     themeConfig: {
-      siteTitle: "WorkBuddy Guide",
+      logo: { src: "/brand/anjian-logo.png", alt: "安居建业" },
+      siteTitle: false,
       nav: [
         { text: "首页", link: "/" },
         { text: "开始阅读", link: "/bluebook/" },
         { text: "阅读指南", link: "/reading-guide" },
-        { text: "参与共创", link: "/community/contributing" },
-        {
-          text: "交流群",
-          items: [{ component: "GroupQrMenu" }],
-        },
+        { text: "共创案例", link: "/community/contributing" },
       ],
       sidebar: bluebookSidebar,
-      socialLinks: [
-        { icon: "github", link: "https://github.com/AlephAITech/WorkBuddyGuide" },
-      ],
       search: {
         provider: "local",
       },
@@ -85,14 +70,10 @@ export default defineConfig({
           timeStyle: "short",
         },
       },
-      editLink: {
-        pattern: "https://github.com/AlephAITech/WorkBuddyGuide/edit/main/docs/:path",
-        text: "在 GitHub 上改进此页",
-      },
       footer: {
         message:
-          '以真实任务为主线的 WorkBuddy 社区实战读本 · Pixel icons by <a href="https://pixeliconlibrary.com/" target="_blank" rel="noreferrer">HackerNoon</a>',
-        copyright: "Copyright © 2026 WorkBuddy Guide Contributors",
+          '内部试用 · 基于 <a href="https://github.com/AlephAITech/WorkBuddyGuide" target="_blank" rel="noreferrer">WorkBuddyGuide</a> 开源项目改编 · MIT License · Pixel icons by <a href="https://pixeliconlibrary.com/" target="_blank" rel="noreferrer">HackerNoon</a>',
+        copyright: "Copyright © 2026 WorkBuddy Guide Contributors · 安居建业内部共创",
       },
     },
   });

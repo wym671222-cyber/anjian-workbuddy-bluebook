@@ -1,61 +1,58 @@
-# 参与共创
+---
+title: 安居建业 WorkBuddy 共创案例规范
+description: 安居建业内部 WorkBuddy 案例的提交、脱敏、筛选、复现和验收规则。
+---
 
-WorkBuddy 的能力、界面和使用方式会持续变化。这本蓝皮书希望由真实使用者共同维护：不仅纠正事实，也不断补充可复现的任务、失败经验和团队方法。
+# 安居建业 WorkBuddy 共创案例规范
 
-## 可以贡献什么
+这本蓝皮书只收录来源清楚、边界明确、能够复现并可验收的真实工作案例。案例材料由员工提供，蓝皮书共创过程负责提炼方法，不虚构内部流程、项目成效或岗位职责。
 
-- 修正错别字、失效链接、过时界面和不准确表述。
-- 补充一个真实、可复现的 WorkBuddy 案例。
-- 为现有案例增加输入、输出、验收标准和失败处理。
-- 补充岗位或行业工作流。
-- 改进截图、图表、导航和无障碍体验。
+## 可以提交什么
 
-## 最轻量的方式：提交 Issue
+- 已经完成或正在验证的真实工作任务。
+- 能复用的提示词、模板、Skill、自动化或检查清单。
+- 失败案例、风险点和人工确认经验。
+- 对现有章节的事实修正、流程补充或过时截图更新。
 
-如果暂时不想修改文件，可以在 [GitHub Issues](https://github.com/AlephAITech/WorkBuddyGuide/issues) 中说明：
+## 提交前检查
 
-1. 哪一页需要调整。
-2. 现在的问题是什么。
-3. 建议怎样修改。
-4. 如果涉及产品事实，请附上来源或截图。
+1. 去除姓名、联系方式、账号、密钥和其他个人信息。
+2. 隐去未公开项目名称、金额、合同条款和经营数据。
+3. 确认材料拥有内部使用和改写权限。
+4. 标明哪些步骤涉及外发、删除、覆盖、审批或专业判断。
+5. 保留可用于复现的脱敏样本，不提交真实生产数据。
 
-## 直接修改内容
+## 逐章共创流程
 
-1. Fork 或克隆仓库。
-2. 找到 `docs/bluebook/` 下对应章节的 `index.md`。
-3. 修改内容或在同目录的 `assets/` 中补充素材。
-4. 本地运行 `npm install` 和 `npm run docs:build`。
-5. 提交 Pull Request，并说明改动、原因和验证方式。
+```mermaid
+flowchart LR
+    A[提交脱敏材料] --> B[判断保留、改写、删除或替换]
+    B --> C[确认公司版提纲]
+    C --> D[复现步骤与产物]
+    D --> E[检查权限和人工确认点]
+    E --> F[用户验收后定稿]
+```
 
-完整规范见仓库根目录的 [CONTRIBUTING.md](https://github.com/AlephAITech/WorkBuddyGuide/blob/main/CONTRIBUTING.md)。
+## 统一章节结构
 
-## 内容原则
+- 适用场景
+- 任务目标
+- 输入材料
+- 执行步骤
+- 人工确认点
+- 输出物
+- 验收标准
+- 安全边界
+- 可复用资产
 
-- **真实任务优先**：说明输入、步骤、交付物和验收方式。
-- **事实与经验分开**：产品事实尽量附来源；个人经验说明适用条件。
-- **对新手友好**：不要假设读者知道工具、权限和术语。
-- **安全边界清晰**：涉及文件、账号、密钥、发布和外部操作时说明风险。
-- **尊重隐私与版权**：不要提交密钥、个人数据或无权公开的资料。
+## 提交案例
 
-## 联系我们
+第一轮从原第 11 章开始逐章讨论。请提供该场景的脱敏材料、当前做法、期望产物和验收方式；在确认章节方向前，不会批量删除或改写后续章节。
 
-如果你想交流共创想法、提交案例，或者参与蓝皮书后续维护，可以扫描二维码联系我们。点击图片可查看大图。
+::: warning 内部资料边界
+请勿在共创材料中包含个人信息、账号密钥、未公开经营数据或无权传播的项目资料。高风险动作必须写明权限、人工确认、日志和回退方式。
+:::
 
-<div class="wb-contact-grid">
-  <a class="wb-contact-card" href="/community/contacts/liu-cong-nlp.jpg" target="_blank" rel="noreferrer">
-    <img src="/community/contacts/liu-cong-nlp.jpg" alt="刘聪NLP 微信二维码" loading="lazy">
-    <span>刘聪NLP</span>
-  </a>
-  <a class="wb-contact-card" href="/community/contacts/dai-shu-di.jpg" target="_blank" rel="noreferrer">
-    <img src="/community/contacts/dai-shu-di.jpg" alt="袋鼠帝微信二维码" loading="lazy">
-    <span>袋鼠帝</span>
-  </a>
-  <a class="wb-contact-card" href="/community/contacts/jia-mu.jpg" target="_blank" rel="noreferrer">
-    <img src="/community/contacts/jia-mu.jpg" alt="甲木微信二维码" loading="lazy">
-    <span>甲木</span>
-  </a>
-  <a class="wb-contact-card" href="/community/contacts/joy.jpg" target="_blank" rel="noreferrer">
-    <img src="/community/contacts/joy.jpg" alt="Joy 微信二维码" loading="lazy">
-    <span>Joy</span>
-  </a>
-</div>
+## 开源来源
+
+本项目基于 [AlephAITech/WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) 改编，继续保留原项目版权声明与 MIT License。

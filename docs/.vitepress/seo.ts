@@ -3,12 +3,12 @@ import { resolve } from "node:path";
 
 import type { HeadConfig, PageData, TransformContext } from "vitepress";
 
-const SITE_NAME = "WorkBuddy 实战蓝皮书";
-const SITE_ALTERNATE_NAME = "WorkBuddy Guide";
-const ORGANIZATION_NAME = "WorkBuddy Guide Contributors";
+const SITE_NAME = "安居建业 WorkBuddy 蓝皮书";
+const SITE_ALTERNATE_NAME = "安居建业 WorkBuddy 内部实践读本";
+const ORGANIZATION_NAME = "安居建业 WorkBuddy 蓝皮书共创组";
 const GITHUB_URL = "https://github.com/AlephAITech/WorkBuddyGuide";
 const DEFAULT_DESCRIPTION =
-  "从安装使用到 AI 工作系统：27 章 WorkBuddy 实战指南与团队落地方法。";
+  "从第一项真实工作，到可复用的 AI 工作系统：安居建业内部 WorkBuddy 实践读本。";
 
 function cleanPagePath(page: string): string {
   if (page === "index.md") return "/";
@@ -134,9 +134,9 @@ function breadcrumbName(segment: string): string {
   }
 
   const labels: Record<string, string> = {
-    bluebook: "WorkBuddy 实战蓝皮书",
-    community: "社区共创",
-    "reading-guide": "WorkBuddy 学习指南",
+    bluebook: "安居建业 WorkBuddy 蓝皮书",
+    community: "内部共创",
+    "reading-guide": "安居建业 WorkBuddy 阅读指南",
   };
 
   return labels[decodedSegment] || decodedSegment.replace(/[-_]/g, " ");
@@ -217,7 +217,7 @@ export function createSeoHead(
   }
 
   const canonicalUrl = absolutePageUrl(siteUrl, page);
-  const socialImageUrl = new URL("/og/workbuddy-guide.png", `${siteUrl}/`).href;
+  const socialImageUrl = new URL("/og/anjian-workbuddy-bluebook.png", `${siteUrl}/`).href;
   const description = pageData.description
     ? truncateDescription(pageData.description)
     : extractDescription(

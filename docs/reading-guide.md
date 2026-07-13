@@ -1,13 +1,13 @@
 ---
-title: WorkBuddy 阅读与学习指南｜从入门到团队落地
+title: 安居建业 WorkBuddy 阅读指南｜从入门到岗位落地
 titleTemplate: false
-description: WorkBuddy 中文学习指南与阅读路线，从下载安装、第一个任务和 Skill 入门，到真实案例、自动化、多 Agent 系统与团队落地。
+description: 安居建业内部 WorkBuddy 阅读路线，从基础使用和第一项任务，到真实案例、工作流沉淀与岗位落地。
 breadcrumbTitle: 阅读指南
 ---
 
-# WorkBuddy 阅读与学习指南：从入门到团队落地
+# 安居建业 WorkBuddy 阅读指南：从入门到岗位落地
 
-这是一条面向新手、任务实践者和团队负责人的 WorkBuddy 学习路线。你不必从头背功能：先找到当前最接近的工作问题，完成一项真实任务，再沿着使用手册、实战案例、进阶系统和团队落地逐步深入。
+这是一条面向安居建业新手、任务实践者和团队负责人的 WorkBuddy 学习路线。你不必从头背功能：先找到当前最接近的工作问题，完成一项真实任务，再沿着基础使用、实战案例、进阶系统和岗位落地逐步深入。
 
 ## WorkBuddy 新手入门路线
 
@@ -45,6 +45,6 @@ breadcrumbTitle: 阅读指南
 - 可以复用的 Skill、模板和自动化。
 - 哪些步骤必须由人确认。
 
-## 发现内容可以改进
+## 提交内部共创案例
 
-欢迎阅读[参与共创](/community/contributing)，通过 Issue 提出问题，或直接提交 Pull Request 修改对应 Markdown 页面。
+欢迎阅读[共创案例规范](/community/contributing)。真实案例应先完成脱敏、权限和边界检查，再进入逐章筛选与编写流程。
