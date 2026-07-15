@@ -13,7 +13,10 @@
     "build": "vitepress build docs",
     "docs:build": "vitepress build docs",
     "preview": "vitepress preview docs --host 127.0.0.1",
-    "docs:preview": "vitepress preview docs --host 127.0.0.1"
+    "docs:preview": "vitepress preview docs --host 127.0.0.1",
+    "check:content": "node scripts/check-content.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "check": "npm run check:content && npm run build && npm run check:links"
   },
   "devDependencies": {
     "@fontsource/silkscreen": "^5.2.8",

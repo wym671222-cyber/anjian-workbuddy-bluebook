@@ -87,8 +87,8 @@ import PixelIconSprite from "./PixelIconSprite.vue";
           <span class="wb-reading-card__icon"><PixelIcon name="briefcase" /></span>
           <span class="wb-reading-card__content">
             <small>02</small>
-            <strong>实战案例：解决安居建业真实任务</strong>
-            <span>从公司真实场景出发，逐章筛选、复现并沉淀可验收成果。</span>
+            <strong>通用实战：解决真实办公任务</strong>
+            <span>从常见办公场景出发，用合成样例跑通可验收的方法。</span>
           </span>
           <PixelIcon name="arrow-right" class="wb-reading-card__arrow" />
         </a>
@@ -107,8 +107,8 @@ import PixelIconSprite from "./PixelIconSprite.vue";
           <span class="wb-reading-card__icon"><PixelIcon name="users" /></span>
           <span class="wb-reading-card__content">
             <small>04</small>
-            <strong>岗位落地：服务公司核心业务</strong>
-            <span>让通用能力匹配岗位职责、业务场景和人工审批边界。</span>
+            <strong>任务落地：从方法走向成果</strong>
+            <span>按任务责任选择能力，并保留人工审批与交付边界。</span>
           </span>
           <PixelIcon name="arrow-right" class="wb-reading-card__arrow" />
         </a>
@@ -148,9 +148,9 @@ import PixelIconSprite from "./PixelIconSprite.vue";
       </div>
       <ol class="wb-system__steps">
         <li><b>01</b><strong>真实任务</strong><span>明确目标、输入与责任边界</span></li>
-        <li><b>02</b><strong>实战案例</strong><span>复盘过程并形成验收方法</span></li>
+        <li><b>02</b><strong>通用实战</strong><span>用合成样例形成验收方法</span></li>
         <li><b>03</b><strong>工作流</strong><span>沉淀 Skill、模板与自动化</span></li>
-        <li><b>04</b><strong>岗位应用</strong><span>匹配职责并持续改进</span></li>
+        <li><b>04</b><strong>任务落地</strong><span>匹配责任并持续改进</span></li>
       </ol>
     </section>
 
@@ -158,10 +158,10 @@ import PixelIconSprite from "./PixelIconSprite.vue";
       <div>
         <p class="wb-pixel-label">WORKBUDDY BLUEBOOK · CO-CREATION · 2026</p>
         <h2 id="wb-community-title">这本蓝皮书，由安居建业的真实工作共同写成。</h2>
-        <p class="wb-community__summary">每个案例都经过筛选、复现与边界检查，再沉淀为可复用的方法。</p>
+        <p class="wb-community__summary">每项方法都经过筛选、复现与边界检查，公开内容只使用合成样例。</p>
       </div>
       <div class="wb-community__actions">
-        <a class="wb-button wb-button--acid" :href="withBase('/community/contributing#提交案例')">提交案例</a>
+        <a class="wb-button wb-button--acid" :href="withBase('/community/contributing#提交共创建议')">提交方法</a>
         <a class="wb-button wb-button--dark-outline" :href="withBase('/community/contributing')">查看共创规范</a>
       </div>
       <PixelIcon name="book" class="wb-community__icon" />

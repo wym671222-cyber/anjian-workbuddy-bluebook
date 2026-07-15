@@ -20,7 +20,7 @@
 
 ![](assets/004_image_JiigbkdTKo.png)
 
-5. 输入任务说明，“帮我分析一下《电商销售数据.xlsx》数据，生成一份汇报 PPT。”
+5. 输入任务说明，“帮我分析一下《办公能耗练习数据.xlsx》，生成一份内部汇报 PPT。”
 
 ![](assets/005_image_ReDxbwNkYo.png)
 

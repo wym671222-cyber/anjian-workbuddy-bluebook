@@ -51,7 +51,7 @@ export default defineConfig({
         { text: "首页", link: "/" },
         { text: "开始阅读", link: "/bluebook/" },
         { text: "阅读指南", link: "/reading-guide" },
-        { text: "共创案例", link: "/community/contributing" },
+        { text: "共创规范", link: "/community/contributing" },
       ],
       sidebar: bluebookSidebar,
       search: {
@@ -74,7 +74,7 @@ export default defineConfig({
       },
       footer: {
         message:
-          "公开阅读版 · 案例需经脱敏、权限和人工确认后使用",
+          "公开阅读版 · 内容采用通用方法与合成样例",
         copyright: "Copyright © 2026 安居建业 WorkBuddy 共创组",
       },
     },
