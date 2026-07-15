@@ -7,13 +7,14 @@ import { createPageDescription, createSeoHead } from "./seo";
 const siteUrl =
   process.env.VITEPRESS_SITE_URL ||
   "https://wym671222-cyber.github.io/anjian-workbuddy-bluebook-site";
+const base = process.env.VITEPRESS_BASE || "/";
 
 export default defineConfig({
     lang: "zh-CN",
     title: "安居建业 WorkBuddy 蓝皮书",
     titleTemplate: ":title · 安居建业 WorkBuddy 蓝皮书",
     description: "从第一项真实工作，到可复用的 AI 工作系统：安居建业 WorkBuddy 实践读本。",
-    base: process.env.VITEPRESS_BASE || "/",
+    base,
     cleanUrls: true,
     lastUpdated: true,
     srcExclude: ["**/source.md", "plans/**"],
@@ -22,7 +23,7 @@ export default defineConfig({
     }),
     transformHead: (context) => createSeoHead(siteUrl, context),
     head: [
-      ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+      ["link", { rel: "icon", type: "image/svg+xml", href: `${base}favicon.svg` }],
       ["meta", { name: "theme-color", content: "#e21b22" }],
       ["meta", { name: "author", content: "安居建业 WorkBuddy 蓝皮书共创组" }],
       [
