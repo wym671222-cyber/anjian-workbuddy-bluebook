@@ -909,6 +909,66 @@ html:not(.dark) .vp-doc .vp-code span {
   color: var(--wb-acid);
 }
 
+/* Plain-text blocks in the bluebook are usually prompts or sample inputs.
+   Keep the copy action visible so readers can follow a recipe without hunting. */
+.vp-doc div.language-text::before {
+  position: absolute;
+  top: 13px;
+  left: 16px;
+  z-index: 2;
+  color: var(--vp-code-lang-color);
+  font-family: var(--wb-pixel);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  content: "可直接复制";
+}
+
+.vp-doc div.language-text > pre {
+  padding-top: 42px;
+}
+
+.vp-doc div.language-text > span.lang {
+  display: none;
+}
+
+.vp-doc div.language-text > button.copy,
+.vp-doc div.language-text:hover > button.copy,
+.vp-doc div.language-text > button.copy:focus {
+  width: 84px;
+  border-color: color-mix(in srgb, var(--wb-acid) 58%, var(--wb-line));
+  color: var(--vp-code-copy-code-active-text);
+  background-position: 12px 50%;
+  opacity: 1;
+}
+
+.vp-doc div.language-text > button.copy::after {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  content: "复制";
+}
+
+.vp-doc div.language-text > button.copy.copied,
+.vp-doc div.language-text > button.copy:hover.copied {
+  border-radius: 4px;
+}
+
+.vp-doc div.language-text > button.copy.copied::before,
+.vp-doc div.language-text > button.copy:hover.copied::before {
+  display: none;
+}
+
+.vp-doc div.language-text > button.copy.copied::after,
+.vp-doc div.language-text > button.copy:hover.copied::after {
+  color: var(--wb-acid);
+  content: "已复制";
+}
+
 .vp-doc code:not(div[class*="language-"] code) {
   border: 1px solid var(--wb-line);
   border-radius: 2px;
