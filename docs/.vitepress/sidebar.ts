@@ -92,6 +92,7 @@ export const bluebookSidebar: DefaultTheme.Sidebar = {
         child(appendix, "附录 C 历史踩坑与故障排查"),
         child(appendix, "附录 D 脱敏与公开检查表"),
         child(appendix, "附录 E 从成果到可复用资产"),
+        child(appendix, "附录 F 备份、校验与恢复演练"),
       ],
     },
   ],
