@@ -68,7 +68,7 @@ export const bluebookSidebar: DefaultTheme.Sidebar = {
       items: [
         item(part3, "本篇导读"),
         child(part3, "第 22 章 打造skill：将书和视频蒸馏为可执行 Skill", "第 22 章 把方法制作成 Skill"),
-        child(part3, "第 23 章 其他用法补充：WorkBuddy 实操案例集", "第 23 章 通用任务方法库"),
+        child(part3, "第 23 章 其他用法补充：WorkBuddy 实操案例集", "第 23 章 备份、校验与恢复演练"),
         child(part3, "第 24 章 如何进行多 Agent 系统设计", "第 24 章 多 Agent 分工与复核"),
         child(part3, "第 25 章 自动化工作流的可靠性", "第 25 章 可靠自动化"),
       ],
@@ -92,7 +92,6 @@ export const bluebookSidebar: DefaultTheme.Sidebar = {
         child(appendix, "附录 C 历史踩坑与故障排查"),
         child(appendix, "附录 D 脱敏与公开检查表"),
         child(appendix, "附录 E 从成果到可复用资产"),
-        child(appendix, "附录 F 备份、校验与恢复演练"),
       ],
     },
   ],
