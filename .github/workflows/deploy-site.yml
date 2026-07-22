@@ -1,0 +1,77 @@
+name: Deploy published site
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-published-site
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    name: Build and deploy VitePress
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      VITEPRESS_BASE: /anjian-workbuddy-bluebook-site/
+      VITEPRESS_SITE_URL: https://wym671222-cyber.github.io/anjian-workbuddy-bluebook-site
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate and build site
+        run: npm run check
+
+      - name: Verify deployment token is configured
+        env:
+          SITE_DEPLOY_TOKEN: ${{ secrets.SITE_DEPLOY_TOKEN }}
+        run: |
+          if [ -z "$SITE_DEPLOY_TOKEN" ]; then
+            echo "::error::Repository secret SITE_DEPLOY_TOKEN is not configured."
+            exit 1
+          fi
+
+      - name: Check out published-site repository
+        uses: actions/checkout@v4
+        with:
+          repository: wym671222-cyber/anjian-workbuddy-bluebook-site
+          ref: main
+          token: ${{ secrets.SITE_DEPLOY_TOKEN }}
+          path: .published-site
+
+      - name: Update published files
+        run: |
+          rsync -a --delete --exclude='.git/' docs/.vitepress/dist/ .published-site/
+          touch .published-site/.nojekyll
+
+      - name: Commit and push published site
+        working-directory: .published-site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all
+
+          if git diff --cached --quiet; then
+            echo "Published site is already up to date."
+            exit 0
+          fi
+
+          git commit -m "Deploy source ${GITHUB_SHA::7}"
+          git push origin HEAD:main

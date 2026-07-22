@@ -45,6 +45,18 @@ npm run docs:preview
 - 手机和桌面宽度下内容都可读。
 - 没有提交密钥、个人信息或构建产物。
 
+## 站点自动发布
+
+`main` 分支每次更新后（包括 PR 合并），GitHub Actions 会自动校验并构建 VitePress，然后把静态产物同步到 `wym671222-cyber/anjian-workbuddy-bluebook-site` 的 `main` 分支。
+
+源码仓库需要配置 Actions 密钥 `SITE_DEPLOY_TOKEN`：
+
+- 使用 fine-grained personal access token，仅授权 `anjian-workbuddy-bluebook-site` 仓库。
+- Repository permissions 只需 `Contents: Read and write`。
+- 在源码仓库的 `Settings → Secrets and variables → Actions` 中保存，不得写入文件、PR 或日志。
+
+如果内容没有变化，工作流会正常结束而不创建空提交。也可以在 Actions 页面手动触发 `Deploy published site` 重新发布。
+
 ## Pull Request
 
 PR 描述请包含：
