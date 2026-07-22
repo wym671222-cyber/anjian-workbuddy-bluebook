@@ -70,7 +70,7 @@ for (const path of publicFiles) {
     errors.push(`${workspacePath}: still contains placeholder text “待补充”`);
   }
 
-  const chapterMatch = workspacePath.match(/第 (1[1-9]|2[0-7]) 章[^/]*\/index\.md$/);
+  const chapterMatch = workspacePath.match(/第 (1[1-9]|2[0-8]) 章[^/]*\/index\.md$/);
   if (chapterMatch) {
     const requiredPatterns = [
       [/# 第 /, "chapter title"],

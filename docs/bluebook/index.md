@@ -1,5 +1,5 @@
 ---
-title: 安居建业 WorkBuddy 蓝皮书｜27 章实践目录
+title: 安居建业 WorkBuddy 蓝皮书｜28 章实践目录
 titleTemplate: false
 description: 面向安居建业员工的 WorkBuddy 实践读本，从基础教程、通用办公任务到可复用工作系统。
 breadcrumbTitle: 安居建业 WorkBuddy 蓝皮书
