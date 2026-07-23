@@ -58,7 +58,8 @@ jobs:
 
       - name: Update published files
         run: |
-          rsync -a --delete --exclude='.git/' docs/.vitepress/dist/ .published-site/
+          rsync -a --delete --exclude='.git/' --exclude='README.md' docs/.vitepress/dist/ .published-site/
+          cp README.md .published-site/README.md
           touch .published-site/.nojekyll
 
       - name: Commit and push published site
